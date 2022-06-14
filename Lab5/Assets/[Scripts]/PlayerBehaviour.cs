@@ -50,6 +50,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+   
 
     void OnDrawGizmos()
     {

@@ -7,6 +7,8 @@ using UnityEngine.UI;
 [System.Serializable]
 public class HealthBarController : MonoBehaviour
 {
+    public CharacterController controller;
+
     public Slider bar;
     public TMP_Text healthLabel;
     [Range(0, 100)]
@@ -17,6 +19,8 @@ public class HealthBarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        controller = GetComponent<CharacterController>();
+
         startingHealthValue = healthValue;
     }
 
@@ -39,6 +43,7 @@ public class HealthBarController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Damage");
         healthValue -= damage;
         if (healthValue < 0)
         {
@@ -49,5 +54,14 @@ public class HealthBarController : MonoBehaviour
     public void OnValueChanged()
     {
         healthLabel.text = bar.value.ToString();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("testing dmg");
+        if(collision.gameObject.tag=="Enemy")
+        {
+            TakeDamage(10);
+        }
     }
 }
