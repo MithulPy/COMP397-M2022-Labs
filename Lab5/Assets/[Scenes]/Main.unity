@@ -1790,12 +1790,12 @@ PrefabInstance:
     - target: {fileID: 5344489566249179974, guid: 1aa42228103ebba4eaa29a000d72b3a0,
         type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5344489566249179974, guid: 1aa42228103ebba4eaa29a000d72b3a0,
         type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5414698069350740069, guid: 1aa42228103ebba4eaa29a000d72b3a0,
         type: 3}
