@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class RobotBehaviour : MonoBehaviour
 {
-
+   
     public Transform player;
     public bool isGrounded;
 
@@ -35,16 +35,16 @@ public class RobotBehaviour : MonoBehaviour
         {
             GetComponent<CapsuleCollider>().enabled = false;
             GetComponent<Rigidbody>().useGravity = false;
-
+           
             isGrounded = true;
         }
     }
 
-    //private void OnCollisionExit(Collision other)
-    //{
-    //    if (other.gameObject.CompareTag("Ground"))
-    //    {
-    //        isGrounded = false;
-    //    }
-    //}
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
 }
