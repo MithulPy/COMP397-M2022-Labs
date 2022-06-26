@@ -593,7 +593,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &531225625
 MonoBehaviour:
@@ -607,14 +607,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e83df12396f9047895b368e48e6250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 3
-  depth: 3
+  width: 10
+  depth: 10
   tilesPrefabs:
   - {fileID: 7894044129308968489, guid: ac4ab64e144c1c249a14717349be7bb8, type: 3}
   - {fileID: 6879205838230500081, guid: 13160e3700d46bc41b6f65804912443c, type: 3}
   tilesParent: {fileID: 1470895451}
+  robotParent: {fileID: 0}
+  hazardParent: {fileID: 0}
+  coinParent: {fileID: 0}
   randomTiles: []
   startTile: {fileID: 2101870016}
+  goalTile: {fileID: 1648877111526121135, guid: 2a9ab85658be63e42a8b1a3a8514cb88,
+    type: 3}
 --- !u!1 &573512985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,7 +1328,7 @@ Transform:
   m_Children:
   - {fileID: 2101870021}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1476420191 stripped
 GameObject:
@@ -1581,7 +1586,7 @@ PrefabInstance:
     - target: {fileID: 2632362377001637204, guid: 8835352841686134892cdf2993892e05,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2632362377001637204, guid: 8835352841686134892cdf2993892e05,
         type: 3}
