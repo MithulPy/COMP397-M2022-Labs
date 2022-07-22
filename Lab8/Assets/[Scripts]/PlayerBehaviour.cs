@@ -30,7 +30,15 @@ public class PlayerBehaviour : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
-        onScreenControls.SetActive((Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer));
+        if(Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            onScreenControls.SetActive(false);
+        }
+        else
+        {
+            onScreenControls.SetActive(true);
+        }
+
     }
 
     // Update is called once per frame
