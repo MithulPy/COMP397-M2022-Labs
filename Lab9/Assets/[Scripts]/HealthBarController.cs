@@ -34,7 +34,7 @@ public class HealthBarController : MonoBehaviour
             OnValueChanged();
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             // Kill Code for testing
             TakeDamage(10);
