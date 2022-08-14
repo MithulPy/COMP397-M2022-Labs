@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: abed157bc8e96aa4a8c8bd89ad6953ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - spawnPoint: {instanceID: 0}
+  - robotParent: {instanceID: 0}
+  - hazardParent: {instanceID: 0}
+  - coinParent: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
