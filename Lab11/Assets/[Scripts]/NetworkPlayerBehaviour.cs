@@ -37,7 +37,7 @@ public class NetworkPlayerBehaviour : NetworkBehaviour
     {
         if (!IsLocalPlayer)
         {
-            //GetComponentInChildren<NetworkCameraController>().enabled = false;
+            GetComponentInChildren<NetworkCameraController>().enabled = false;
             GetComponentInChildren<Camera>().enabled = false;
         }
 
