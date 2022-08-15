@@ -5,7 +5,7 @@ using Unity.Netcode;
 
 public class GameManager : MonoBehaviour
 {
-   public GameObject localCamera;
+    public GameObject localCamera;
     public GameObject canvas;
 
     private void OnGUI()
@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
         {
             // show start buttons
             StartButtons();
-
         }
         else
         {
